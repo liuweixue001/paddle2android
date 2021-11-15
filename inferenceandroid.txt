@@ -1,0 +1,7 @@
+# 在Ai Studio下运行
+!paddle_lite_opt \
+    --model_file=mnist.pdmodel \
+    --param_file=mnist.pdiparams \
+    --optimize_out=model \
+    --optimize_out_type=naive_buffer \
+    --valid_targets=arm
